@@ -1,0 +1,32 @@
+server:
+  port: 9091
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: sa
+    url: jdbc:h2:mem:testdb
+    user: sa
+
+  h2:
+    console:
+      enabled: 'true' 
+   
+
+                
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  mail:
+    host: smtp.gmail.com
+    username: sahilpratap123yadav@gmail.com
+    password: xvcfltnfjmajptvk
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  

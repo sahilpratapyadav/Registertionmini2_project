@@ -1,0 +1,23 @@
+package in.ashokit.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.binding.LoginForm;
+import in.ashokit.service.UserMgmtServiceImpl;
+
+@RestController
+public class LoginRestController {
+     @Autowired
+	private UserMgmtServiceImpl ser;
+
+	@PostMapping("/login")
+	public String Login(@RequestBody LoginForm user) {
+		String signIN = ser.signIN(user);
+
+		return signIN;
+	}
+
+}
