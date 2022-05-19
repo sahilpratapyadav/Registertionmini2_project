@@ -20,7 +20,7 @@ spring:
     defer-datasource-initialization: true
   mail:
     host: smtp.gmail.com
-    username: sahilpratap123yadav@gmail.com
+    username: 
     password: 
     port: 587
     properties:
